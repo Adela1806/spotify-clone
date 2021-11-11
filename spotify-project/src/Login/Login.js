@@ -1,4 +1,5 @@
 import React from "react";
+import { accessUrl } from "../Spotify/Spotify";
 import "./Login.scss";
 function Login() {
   return (
@@ -8,7 +9,7 @@ function Login() {
         src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
         alt=""
       />
-      <button>LOGIN WITH SPOTIFY</button>
+      <a href={accessUrl}>LOGIN WITH SPOTIFY</a>
     </div>
   );
 }
