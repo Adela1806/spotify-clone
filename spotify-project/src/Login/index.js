@@ -1,5 +1,5 @@
 import React from "react";
-import { accessUrl } from "../Spotify/Spotify";
+import { accessUrl } from "../spotify";
 import "./Login.scss";
 function Login() {
   return (
