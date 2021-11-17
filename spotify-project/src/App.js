@@ -4,7 +4,6 @@ import SpotifyWebApi from "spotify-web-api-js";
 import { useStateValue } from "./StateProvider";
 import Player from "./Player";
 import { getTokenFromResponse } from "./spotify";
-import "./App.css";
 import Login from "./Login";
 
 import "./App.css";
@@ -55,6 +54,7 @@ function App() {
       });
 
       s.getUserPlaylists().then((playlists) => {
+        debugger;
         dispatch({
           type: "SET_PLAYLISTS",
           playlists,
@@ -66,6 +66,7 @@ function App() {
   return (
     <div className="app">
       {!token && <Login />}
+
       {token && <Player spotify={s} />}
     </div>
   );
